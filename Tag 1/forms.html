@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <!-- Zeichensatz (wichtig für Umlaute wie ä, ö, ü) -->
+  <meta charset="UTF-8">
+
+  <!-- Responsive Design für mobile Geräte -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Formular mit Erklärungen</title>
+</head>
+<body>
+
+  <!-- <form> = Formular-Container -->
+  <!-- action = Ziel (Server/URL) -->
+  <!-- method = Übertragungsart (GET = sichtbar, POST = versteckt) -->
+  <form action="#" method="post">
+
+    <!-- LABEL + INPUT (Textfeld) -->
+    <!-- for = verbindet Label mit Input über id -->
+    <label for="name">Name:</label>
+
+    <!-- type="text" = einfaches Textfeld -->
+    <!-- id = eindeutige ID (wichtig für label) -->
+    <!-- name = Name der Daten (wird an Server gesendet) -->
+    <!-- placeholder = Beispieltext im Feld -->
+    <!-- required = Pflichtfeld -->
+    <input 
+      type="text" 
+      id="name" 
+      name="name" 
+      placeholder="Dein Name" 
+      required
+    >
+
+    <br><br>
+
+    <!-- EMAIL INPUT -->
+    <label for="email">E-Mail:</label>
+
+    <!-- type="email" = prüft automatisch gültige E-Mail -->
+    <input 
+      type="email" 
+      id="email" 
+      name="email" 
+      placeholder="name@email.com" 
+      required
+    >
+
+    <br><br>
+
+    <!-- DROPDOWN -->
+    <label for="thema">Thema:</label>
+
+    <!-- <select> = Auswahlmenü -->
+    <!-- name = gesendeter Wert -->
+    <select id="thema" name="thema">
+
+      <!-- value = Wert, der gesendet wird -->
+      <option value="frage">Frage</option>
+      <option value="feedback">Feedback</option>
+      <option value="hilfe">Hilfe</option>
+
+    </select>
+
+    <br><br>
+
+    <!-- TEXTAREA -->
+    <label for="nachricht">Nachricht:</label>
+
+    <!-- rows = Höhe -->
+    <!-- cols = Breite -->
+    <textarea 
+      id="nachricht" 
+      name="nachricht" 
+      rows="4" 
+      cols="30"
+    ></textarea>
+
+    <br><br>
+
+    <!-- CHECKBOX -->
+    <!-- type="checkbox" = Auswahlfeld -->
+    <!-- required = muss angeklickt werden -->
+    <input 
+      type="checkbox" 
+      id="agb" 
+      name="agb" 
+      required
+    >
+
+    <label for="agb">AGB akzeptieren</label>
+
+    <br><br>
+
+    <!-- RADIO BUTTONS -->
+    <!-- gleiche name = nur eine Auswahl möglich -->
+    <p>Kontaktart:</p>
+
+    <input 
+      type="radio" 
+      id="emailKontakt" 
+      name="kontakt" 
+      value="email"
+    >
+    <label for="emailKontakt">E-Mail</label>
+
+    <input 
+      type="radio" 
+      id="telefonKontakt" 
+      name="kontakt" 
+      value="telefon"
+    >
+    <label for="telefonKontakt">Telefon</label>
+
+    <br><br>
+
+    <!-- BUTTON -->
+    <!-- type="submit" = sendet Formular -->
+    <button type="submit">Absenden</button>
+
+  </form>
+
+</body>
+</html>

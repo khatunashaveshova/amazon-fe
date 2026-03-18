@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Grundlagen</title>
+
+  <!-- Interne CSS-Datei im <style>-Tag -->
+  <style>
+
+    /* =========================
+       GRUNDLEGENDES
+       ========================= */
+
+    /* body = gesamter Seitenbereich */
+    body {
+      font-family: Arial, sans-serif; /* Schriftart */
+      background-color: #f4f4f4;      /* Hintergrundfarbe */
+      margin: 0;                      /* Außenabstand entfernen */
+      padding: 20px;                  /* Innenabstand */
+    }
+
+    /* =========================
+       ÜBERSCHRIFTEN
+       ========================= */
+
+    h1 {
+      color: darkblue;        /* Textfarbe */
+      text-align: center;     /* Zentrierung */
+    }
+
+    /* =========================
+       KLASSEN (class)
+       ========================= */
+
+    /* .box = Klasse (kann mehrfach verwendet werden) */
+    .box {
+      background-color: white;
+      border: 2px solid gray;   /* Rahmen */
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;      /* abgerundete Ecken */
+    }
+
+    /* =========================
+       ID (einmalig)
+       ========================= */
+
+    /* #highlight = eindeutiges Element */
+    #highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
+
+    /* =========================
+       LINKS STYLEN
+       ========================= */
+
+    a {
+      color: blue;
+      text-decoration: none; /* Unterstreichung entfernen */
+    }
+
+    /* Hover = wenn Maus darüber ist */
+    a:hover {
+      color: red;
+    }
+
+    /* =========================
+       BUTTON
+       ========================= */
+
+    button {
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer; /* Maus wird zur Hand */
+    }
+
+    button:hover {
+      background-color: darkgreen;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Überschrift -->
+  <h1>CSS Grundlagen Beispiel</h1>
+
+  <!-- Klasse "box" -->
+  <div class="box">
+    <p>Das ist eine Box mit einer Klasse.</p>
+  </div>
+
+  <!-- Klasse + ID kombiniert -->
+  <div class="box" id="highlight">
+    <p>Diese Box ist besonders hervorgehoben.</p>
+  </div>
+
+  <!-- Link -->
+  <p>
+    <a href="#">Das ist ein Link</a>
+  </p>
+
+  <!-- Button -->
+  <button>Klick mich</button>
+
+</body>
+</html>

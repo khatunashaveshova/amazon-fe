@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css">
+  <title>DOM Basics in JavaScript</title>
+</head>
+<body>
+  <header>
+    <h1>DOM Basics in JavaScript</h1>
+    <p>Interactive examples for your classroom session</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>1. Was ist das DOM?</h2>
+      <p id="intro-text">
+        Das <strong>Document Object Model (DOM)</strong> ist eine Struktur der HTML-Seite,
+        auf die JavaScript zugreifen und sie verändern kann.
+      </p>
+      <button id="change-text-btn">Text ändern</button>
+    </section>
+
+    <section>
+      <h2>2. Elemente auswählen</h2>
+      <p class="demo-text">Dies ist ein Absatz mit einer Klasse.</p>
+      <p class="demo-text">Dies ist noch ein Absatz mit derselben Klasse.</p>
+      <button id="highlight-btn">Absätze hervorheben</button>
+    </section>
+
+    <section>
+      <h2>3. Inhalte hinzufügen</h2>
+      <ul id="topic-list">
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+      <button id="add-item-btn">Neues Listenelement hinzufügen</button>
+    </section>
+
+    <section>
+      <h2>4. Events</h2>
+      <p>Ein Event reagiert auf Benutzeraktionen wie Klicks, Tastatureingaben oder Mausbewegungen.</p>
+      <button id="event-btn">Klick mich</button>
+      <div class="box" id="event-output">Noch kein Event ausgelöst.</div>
+    </section>
+
+    <section>
+      <h2>Attribute ändern</h2>
+      <img
+        id="demo-image"
+        src="https://fastly.picsum.photos/id/84/200/300.jpg?hmac=lG-wRB_G_4GA_bTdTnfV4BWUOOpf0g6gXeUeNyt1-uQ"
+        alt="Beispielbild"
+      />
+      <br />
+      <button id="change-image-btn">Bild ändern</button>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>

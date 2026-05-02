@@ -342,8 +342,7 @@ function loadPostsWithThen() {
   setStatus("Daten werden geladen mit .then() ...");
   clearOutput();
 
-  fetch("https://jsonplaceholder.typicode.com/posts")
-    .then((response) => {
+  fetch("https://jsonplaceholder.typicode.com/posts").then((response) => {
       /*
       Auch hier prüfen wir die Antwort.
       Wenn response.ok false ist, erzeugen wir einen Fehler.
